@@ -47,39 +47,39 @@ const users = [
 
 
 // Write a function which filter users who has  scoresGreaterThan85
-// function scoresGreaterThan85(users) {
-//     return users.scores > 85
-// }
+function scoresGreaterThan85(users) {
+    return users.scores > 85
+}
 
-// console.log(users.filter(scoresGreaterThan85))
+console.log(users.filter(scoresGreaterThan85))
 
 
 
 // Write a function which addUser  to the user array only if the user does not exist.
-// function addUserifNotExists(user) {
+function addUserifNotExists(user) {
 
-//     let x = users.filter(iterTheUsers => iterTheUsers.name == user.name);
-//     // console.log(typeof x)
-//     if (x != undefined) users.push(user)
-//     else return console.log("user already exist")
-//     console.log(users)
+    let x = users.filter(iterTheUsers => iterTheUsers.name == user.name);
+    // console.log(typeof x)
+    if (x != undefined) users.push(user)
+    else return console.log("user already exist")
+    console.log(users)
 
-// }
-// addUserifNotExists({ name: 'Dheeraj', scores: 75, skills: ['nginx', 'docker', 'JS'], age: 27 })
+}
+addUserifNotExists({ name: 'Dheeraj', scores: 75, skills: ['nginx', 'docker', 'JS'], age: 27 })
 
 
 
 // 	Write a function which addUserSkill which can add skill to a user only if the user exist.   
-// function addUserSkill(user) {
-//     for (let i = 0; i < users.length; i++) {
-//         const ele = users[i];
-//         if (ele.name == user.name) ele.skills.push(user.skill)
-//         else continue;
-//     }
-//     return users
-// }
+function addUserSkill(user) {
+    for (let i = 0; i < users.length; i++) {
+        const ele = users[i];
+        if (ele.name == user.name) ele.skills.push(user.skill)
+        else continue;
+    }
+    return users
+}
 
-// console.log(addUserSkill({ name: 'Joh', skill: 'Nginx' }))
+console.log(addUserSkill({ name: 'Joh', skill: 'Nginx' }))
 
 
 
